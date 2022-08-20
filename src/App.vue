@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
 import TheWelcome from "./components/TheWelcome.vue";
+import CustomTemplate from "./components/CustomTemplate.vue"
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import TheWelcome from "./components/TheWelcome.vue";
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <CustomTemplate /> 
     </div>
   </header>
 
