@@ -2,10 +2,12 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import TheWelcome from "./components/TheWelcome.vue";
 import CustomTemplate from "./components/CustomTemplate.vue"
+import ListRendering from "./components/ListRendering.vue";
 </script>
 
 <template>
-  <header>
+  <ListRendering />
+  <!-- <header>
     <img
       alt="Vue logo"
       class="logo"
@@ -22,7 +24,7 @@ import CustomTemplate from "./components/CustomTemplate.vue"
 
   <main>
     <TheWelcome />
-  </main>
+  </main> -->
 </template>
 
 <style scoped>
