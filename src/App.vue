@@ -3,10 +3,28 @@ import HelloWorld from "./components/HelloWorld.vue";
 import TheWelcome from "./components/TheWelcome.vue";
 import CustomTemplate from "./components/CustomTemplate.vue"
 import ListRendering from "./components/ListRendering.vue";
+import ComputedProperty from "./components/ComputedProperty.vue";
+import LifecycleAndTemplateRefs from "./components/LifecycleAndTemplateRefs.vue";
+import Watchers from "./components/Watchers.vue";
+import ChildComponentWithProps from "./components/ChildComponentWithProps.vue";
+import ChildComponentWithEmits from "./components/ChildComponentWithEmits.vue";
+import { ref } from "@vue/reactivity";
+import Slots from "./components/Slots.vue";
+
+const childMsg = ref("No msg from child");
 </script>
 
 <template>
-  <ListRendering />
+
+  <Slots><h1>This is from parent</h1></Slots>
+  
+  
+  <!-- Child component with emits -->
+  <!-- <ChildComponentWithEmits @response="(msg)=>childMsg = msg"/>
+  <p>{{ childMsg }}</p> -->
+
+  <!-- Child component with props -->
+  <!-- <ChildComponentWithProps msg="Hello World"/> -->
   <!-- <header>
     <img
       alt="Vue logo"
